@@ -1,0 +1,24 @@
+.home-container1 {
+  width: 100%;
+  display: block;
+  min-height: 100vh;
+}
+ 
+.home-thq-hero-text-block-elm {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.home-thq-hero-title-elm {
+  width: 100%;
+}
+ 
+.home-container2 {
+  display: none;
+}
+ 
+.home-container3 {
+  display: contents;
+}
