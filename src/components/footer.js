@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import Script from 'dangerous-html/react'
 
@@ -64,75 +65,24 @@ const Footer = (props) => {
                 </div>
               </div>
               <div className="footer-social-links">
-                <a href="#">
-                  <div
-                    aria-label="LinkedIn Profile"
-                    className="footer-social-btn"
-                  >
-                    <svg
-                      width="20"
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="20"
-                      viewBox="0 0 24 24"
-                    >
-                      <g
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2a2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6M2 9h4v12H2z"></path>
-                        <circle r="2" cx="4" cy="4"></circle>
-                      </g>
-                    </svg>
-                  </div>
+                <a href="#" aria-label="LinkedIn Profile" className="footer-social-btn">
+                  <svg width="20" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24">
+                    <g fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2a2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6M2 9h4v12H2z"></path>
+                      <circle r="2" cx="4" cy="4"></circle>
+                    </g>
+                  </svg>
                 </a>
               </div>
             </div>
-            <nav
-              aria-labelledby="footer-nav-title"
-              className="footer-nav-col footer-column"
-            >
-              <h2 id="footer-nav-title" className="footer-heading">
-                Navigation
-              </h2>
+            <nav aria-labelledby="footer-nav-title" className="footer-nav-col footer-column">
+              <h2 id="footer-nav-title" className="footer-heading">Navigation</h2>
               <ul className="footer-link-list">
-                <li>
-                  <a href="/">
-                    <div className="footer-link">
-                      <span>Home</span>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div className="footer-link">
-                      <span>Investment Process</span>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div className="footer-link">
-                      <span>Planning Services</span>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div className="footer-link">
-                      <span>Insights</span>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div className="footer-link">
-                      <span>About / Contact</span>
-                    </div>
-                  </a>
-                </li>
+                <li><Link to="/"><div className="footer-link"><span>Home</span></div></Link></li>
+                <li><Link to="/investment-process"><div className="footer-link"><span>Investment Process</span></div></Link></li>
+                <li><Link to="/planning-services"><div className="footer-link"><span>Planning Services</span></div></Link></li>
+                <li><Link to="/insights"><div className="footer-link"><span>Insights</span></div></Link></li>
+                <li><Link to="/about-contact"><div className="footer-link"><span>About / Contact</span></div></Link></li>
               </ul>
             </nav>
             <div className="footer-philosophy-col footer-column">
@@ -151,78 +101,29 @@ const Footer = (props) => {
             </div>
           </div>
           <div className="footer-compliance-divider"></div>
+
           <div className="footer-compliance-section">
             <div className="footer-legal-grid">
               <div className="footer-legal-links">
-                <a href="#">
-                  <div className="footer-legal-link">
-                    <span>Privacy Policy</span>
-                  </div>
-                </a>
-                <span aria-hidden="true" className="footer-legal-separator">
-                  •
-                </span>
-                <a href="#">
-                  <div className="footer-legal-link">
-                    <span>Terms of Service</span>
-                  </div>
-                </a>
-                <span aria-hidden="true" className="footer-legal-separator">
-                  •
-                </span>
-                <a href="#">
-                  <div className="footer-legal-link">
-                    <span>RIA Disclosures</span>
-                  </div>
-                </a>
+                <Link to="/privacy-policy"><div className="footer-legal-link"><span>Privacy Policy</span></div></Link>
+                <span aria-hidden="true" className="footer-legal-separator">•</span>
+                <Link to="/terms-of-service"><div className="footer-legal-link"><span>Terms of Service</span></div></Link>
+                <span aria-hidden="true" className="footer-legal-separator">•</span>
+                <Link to="/ria-disclosures"><div className="footer-legal-link"><span>RIA Disclosures</span></div></Link>
               </div>
-              <div className="footer-copyright">
-                <p className="footer-copyright-text section-content">
-                  © 2026 Harvest Lane Investment Partners. All Rights Reserved.
-                </p>
-              </div>
+
+              <div className="footer-copyright"><p className="footer-copyright-text section-content">© 2026 Harvest Lane Investment Partners. All Rights Reserved.</p></div>
             </div>
+
             <div className="footer-disclosure-block">
-              <p className="footer-disclosure-text section-content">
-                Investing involves risk, including the potential loss of
-                principal. Harvest Lane Investment Partners is a Registered
-                Investment Adviser. Information provided is for educational
-                purposes and does not constitute investment, legal, or tax
-                advice. Past performance is not indicative of future results.
-              </p>
+              <p className="footer-disclosure-text section-content">Investing involves risk, including the potential loss of principal. Harvest Lane Investment Partners is a Registered Investment Adviser. Information provided is for educational purposes and does not constitute investment, legal, or tax advice. Past performance is not indicative of future results.</p>
             </div>
           </div>
         </div>
       </footer>
       <div className="footer-container2">
         <div className="footer-container3">
-          <Script
-            html={`<script defer data-name="footer-scroll-reveal">
-(function(){
-  const footerObserverOptions = {
-    threshold: 0.1,
-  }
-
-  const footerObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.style.opacity = "1"
-        entry.target.style.transform = "translateY(0)"
-        footerObserver.unobserve(entry.target)
-      }
-    })
-  }, footerObserverOptions)
-
-  const footerColumns = document.querySelectorAll(".footer-column")
-  footerColumns.forEach((col, index) => {
-    col.style.opacity = "0"
-    col.style.transform = "translateY(20px)"
-    col.style.transition = \`all 0.6s ease-out \${index * 0.15}s\`
-    footerObserver.observe(col)
-  })
-})()
-</script>`}
-          ></Script>
+          <Script html={`<script defer data-name="footer-scroll-reveal">(function(){const footerObserverOptions={threshold:0.1};const footerObserver=new IntersectionObserver((entries)=>{entries.forEach((entry)=>{if(entry.isIntersecting){entry.target.style.opacity="1";entry.target.style.transform="translateY(0)";footerObserver.unobserve(entry.target)}})},footerObserverOptions);const footerColumns=document.querySelectorAll(".footer-column");footerColumns.forEach((col,index)=>{col.style.opacity="0";col.style.transform="translateY(20px)";col.style.transition=\`all 0.6s ease-out \${index*0.15}s\`;footerObserver.observe(col)})})()</script>`}></Script>
         </div>
       </div>
     </div>
