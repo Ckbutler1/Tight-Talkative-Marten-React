@@ -1,0 +1,38 @@
+.ria-disclosures-container {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ria-disclosures-content {
+  width: 100%;
+  display: flex;
+  padding: 80px 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+}
+
+.ria-disclosures-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  padding: 60px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ria-disclosures-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #1a1a1a;
+}
+
+.ria-disclosures-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
